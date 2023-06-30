@@ -11,22 +11,28 @@
 </head>
 
 <body>
-    <section class="header">
+    <section id="header">
         <a href="#"><img src="assets/img/logo.png" class="logo" alt=""></a>
 
         <div>
-            <ul class="navbar">
+            <ul id="navbar">
                 <li><a class="active" href="index.html">Trang chủ</a></li>
                 <li><a href="shop.html">Sản phẩm</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">Giới thiệu</a></li>
                 <li><a href="contact.html">Liên hệ</a></li>
-                <li><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-xmark"></i></a>
             </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
         </div>
     </section>
 
-    <section class="hero">
+    <section id="hero">
         <h4>Khuyến mãi</h4>
         <h2>Chào mừng khai trương</h2>
         <h1>Giảm giá tất cả sản phẩm</h1>
@@ -430,6 +436,8 @@
             <p>© 2023 Công ty TNHH MMT Việt Nam</p>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
