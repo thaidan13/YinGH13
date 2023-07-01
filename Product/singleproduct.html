@@ -34,7 +34,7 @@
 
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="assets/img/products/f1.jpg" width="100%" id="main-img" alt="">
+            <img src="assets/img/products/f1.jpg" width="100%" id="mainImg" alt="">
             <div class="small-img-group">
                 <div class="small-img-col">
                     <img src="assets/img/products/f1.jpg" width="100%" class="small-img" alt="">
@@ -211,6 +211,24 @@
             <p>© 2023 Công ty TNHH MMT Việt Nam</p>
         </div>
     </footer>
+
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function () {
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            mainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            mainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            mainImg.src = smallimg[3].src;
+        }
+    </script>
 
     <script src="assets/js/main.js"></script>
 </body>
