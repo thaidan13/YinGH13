@@ -207,27 +207,27 @@ body {
   line-height: 1;
   border-radius: 4px;
   color: #088178;
-  background-color: #fddde4;
+  background-color: #DBF4F6;
 }
 
 #feature .fe-box:nth-child(2) h6{
-  background-color: #cdebbc;
+  background-color: #F6DBEA;
 }
 
 #feature .fe-box:nth-child(3) h6{
-  background-color: #d1e8f2;
+  background-color: #EAF5D8;
 }
 
 #feature .fe-box:nth-child(4) h6{
-  background-color: #cdd4f8;
+  background-color: #DEEEF9;
 }
 
 #feature .fe-box:nth-child(5) h6{
-  background-color: #f6dbf6;
+  background-color: #E3DDF4;
 }
 
 #feature .fe-box:nth-child(6) h6{
-  background-color: #fff2e5;
+  background-color: #F6E5DB;
 }
 
 #product1 {
