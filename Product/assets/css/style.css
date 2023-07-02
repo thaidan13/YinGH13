@@ -788,10 +788,10 @@ footer .copyright {
   padding:  0;
 }
 
-/* #contact-deatils .details li i {
+#contact-deatils .details li i {
   font-size: 14px;
   padding-right: 22px;
-} */
+}
 
 #contact-deatils .details li p {
   margin: 0;
