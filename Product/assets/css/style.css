@@ -560,13 +560,16 @@ footer .copyright {
   color: #fff;
 }
 
-#pagination {
+/* #pagination {
   text-align: center;
+  margin: 30px 30px 60px;
+  user-select: none;
 }
 
 #pagination li {
-  list-style: none;
   display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
 }
 
 #pagination a {
@@ -586,6 +589,61 @@ footer .copyright {
 #pagination li a i {
   font-size: 16px;
   font-weight: 600;
+} */
+
+#pagination {
+  text-align: center;
+  margin: 30px 30px 60px;
+  user-select: none;
+}
+
+#pagination li:hover {
+  background-color: #8fea20;
+  color: #000;
+}
+
+#pagination li {
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+#pagination li  a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 45px;
+}
+
+.previous-page, .next-page {
+  background: #088178;
+  width: 80px;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.previous-page:hover {
+  transform: translateX(-5px);
+}
+
+.next-page:hover {
+  transform: translateX(5px);
+}
+
+.current-page, .dots {
+  background: #ccc;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ac {
+  background: #088178;
+}
+
+.disable {
+  background: #ccc;
 }
 
 /* Single */
