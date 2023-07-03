@@ -184,7 +184,7 @@ mic.onclick = () => {
 }
 
 
-// Cart
+// Cart đang có lỗi
 
 let list = document.querySelectorAll(".pro-container .pro");
 list.forEach(item => {
