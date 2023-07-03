@@ -19,11 +19,11 @@ if (close) {
 
 (function () {
 
-    let field = document.querySelector('.pro-container');
+    let field = document.querySelector(".pro-container");
     let li = Array.from(field.children);
 
     function SortProduct() {
-        let select = document.getElementById('select');
+        let select = document.getElementById("select");
         let ar = [];
         for (let i of li) {
             const last = i.lastElementChild;
