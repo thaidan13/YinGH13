@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="assets/img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="shop.html">Sản phẩm</a></li>
+                <li><a href="blog.html">Tin tức</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li id=""><a href="#"><i class="fa fa-user"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="contact-header">
+        <h2>Giỏ hàng</h2>
+        <p>Tiết kiệm nhiều hơn với mã giảm giá & giảm giá lên đén 70%</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <td>Xóa</td>
+                <td>Hình ảnh</td>
+                <td>Sản phẩm</td>
+                <td>Giá</td>
+                <td>Số lượng</td>
+                <td>Tổng tiền</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="assets/img/products/f1.jpg" alt=""></td>
+                    <td>Sản phẩm 1</td>
+                    <td>75.000 VNĐ</td>
+                    <td><input type="number" value="1"></td>
+                    <td>75.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="assets/img/products/f2.jpg" alt=""></td>
+                    <td>Sản phẩm 2</td>
+                    <td>75.000 VNĐ</td>
+                    <td><input type="number" value="1"></td>
+                    <td>75.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="assets/img/products/f3.jpg" alt=""></td>
+                    <td>Sản phẩm 3</td>
+                    <td>75.000 VNĐ</td>
+                    <td><input type="number" value="1"></td>
+                    <td>75.000 VNĐ</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Áp Dụng Mã Giảm Giá</h3>
+            <div>
+                <input type="text" placeholder="Mã giảm giá của bạn">
+                <button class="normal">Áp dụng</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Tổng sản phẩm</h3>
+            <table>
+                <tr>
+                    <td>Giá tổng sản phẩm</td>
+                    <td>225.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Phí vận chuyển</td>
+                    <td>Miễn phí</td>
+                </tr>
+                <tr>
+                    <td><strong>Tổng tiền</strong></td>
+                    <td><strong>225.000 VNĐ</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Thanh toán</button>
+        </div>
+    </section>
+
+    <section id="newletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Đăng kí để nhận bảng tin</h4>
+            <p>Nhận E-mail cập nhật thông tin về cửa hàng chúng tôi và <span>ưu đãi đặc biệt</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Địa chỉ email của bạn">
+            <button class="normal">Đăng kí</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="assets/img/logo.png" alt="">
+            <h4>Liên hệ</h4>
+            <p><strong>Địa chỉ:</strong> QTSC9, Tô Ký, Quận 12, Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p><strong>Điện thoại:</strong> +84 999999999</p>
+            <p><strong>Thời gian:</strong> 08:00 - 18:00, Thứ hai - Thứ bảy</p>
+            <div class="follow">
+                <h4>Theo dõi tại</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Giới thiệu</h4>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Thông tin giao hàng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản & Điều kiện</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <div class="col">
+            <h4>Tài khoản của bạn</h4>
+            <a href="#">Đăng nhập</a>
+            <a href="#">Xem giỏ hàng</a>
+            <a href="#">Sản phẩm yêu thích</a>
+            <a href="#">Theo dõi đơn hàng của bạn</a>
+            <a href="#">Hỗ trợ</a>
+        </div>
+
+        <div class="col install">
+            <h4>Tải xuống ứng dụng</h4>
+            <p>Từ App Store hoặc Google Play</p>
+            <div class="row">
+                <img src="assets/img/pay/app.jpg" alt="">
+                <img src="assets/img/pay/play.jpg" alt="">
+            </div>
+            <p>Cổng thanh toán an toàn</p>
+            <img src="assets/img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 Công ty TNHH MMT Việt Nam</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
