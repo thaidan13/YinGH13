@@ -43,7 +43,7 @@
     <section id="product1" class="section-p1">
         <div class="ser-fil">
             <form action="" class="search-condition">
-                <input type="text" placeholder="Tìm kiếm">
+                <input type="text" id="search-item" placeholder="Tìm kiếm" onkeyup="search()">
                 <i class="fa fa-microphone" id="voice-search"></i>
             </form>
             <div class="filter-condition">
@@ -51,12 +51,12 @@
                 <select name="" id="select">
                     <option value="Default">Mặc định</option>
                     <option value="LowToHigh">Thấp đến cao</option>
-                    <option value="HighToLow">Cao dến thấp</option>
+                    <option value="HighToLow">Cao đến thấp</option>
                 </select>
             </div>
         </div>
-        <div class="pro-container">
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+        <div class="pro-container" id="product-list">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f1.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -72,7 +72,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f2.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -88,7 +88,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f3.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -104,7 +104,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f4.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -116,11 +116,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h4>75.000 VNĐ</h4>
+                    <h4>100.000 VNĐ</h4>
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f5.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -132,11 +132,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h4>75.000 VNĐ</h4>
+                    <h4>175.000 VNĐ</h4>
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -148,11 +148,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h4>75.000 VNĐ</h4>
+                    <h4>125.000 VNĐ</h4>
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f7.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -168,7 +168,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f8.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -184,7 +184,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n1.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -200,7 +200,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n2.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -216,7 +216,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n3.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -232,7 +232,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n4.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -248,7 +248,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n5.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -264,7 +264,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -280,7 +280,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n7.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -296,7 +296,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n8.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -312,7 +312,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f1.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -328,7 +328,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f2.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -344,7 +344,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f3.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -360,7 +360,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f4.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -372,11 +372,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h4>75.000 VNĐ</h4>
+                    <h4>100.000 VNĐ</h4>
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f5.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -388,11 +388,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h4>75.000 VNĐ</h4>
+                    <h4>175.000 VNĐ</h4>
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -404,11 +404,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h4>75.000 VNĐ</h4>
+                    <h4>125.000 VNĐ</h4>
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f7.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -424,7 +424,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/f8.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -440,7 +440,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n1.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -456,7 +456,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n2.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -472,7 +472,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n3.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -488,7 +488,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n4.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -504,7 +504,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n5.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -520,7 +520,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -536,7 +536,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n7.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -552,7 +552,7 @@
                 </div>
                 <a href="#" class="add"><i class='bx bx-cart-alt cart'></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='singleproduct.html'">
+            <div class="pro" data-price="" onclick="window.location.href='singleproduct.html'">
                 <img src="assets/img/products/n8.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>

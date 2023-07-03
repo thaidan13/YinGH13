@@ -14,6 +14,58 @@ if (close) {
     })
 }
 
+
+// SortProduct cũng đang lỗi
+
+(function () {
+
+    let field = document.querySelector('.pro-container');
+    let li = Array.from(field.children);
+
+    function SortProduct() {
+        let select = document.getElementById('select');
+        let ar = [];
+        for (let i of li) {
+            const last = i.lastElementChild;
+            const x = last.textContent.trim();
+            const y = Number(x.substring(1));
+            i.setAttribute("data-price", y);
+            ar.push(i);
+        }
+        this.run = () => {
+            addevent();
+        }
+        function addevent() {
+            select.onchange = sortingValue;
+        }
+        function sortingValue() {
+
+            if (this.value === 'Default') {
+                while (field.firstChild) { field.removeChild(field.firstChild); }
+                field.append(...ar);
+            }
+            if (this.value === 'LowToHigh') {
+                SortElem(field, li, true)
+            }
+            if (this.value === 'HighToLow') {
+                SortElem(field, li, false)
+            }
+        }
+        function SortElem(field, li, asc) {
+            let dm, sortli;
+            dm = asc ? 1 : -1;
+            sortli = li.sort((a, b) => {
+                const ax = a.getAttribute('data-price');
+                const bx = b.getAttribute('data-price');
+                return ax > bx ? (1 * dm) : (-1 * dm);
+            });
+            while (field.firstChild) { field.removeChild(field.firstChild); }
+            field.append(...sortli);
+        }
+    }
+    new SortProduct().run();
+})();
+
 // Pagination
 
 function getPageList(totalPages, page, maxLength) {
@@ -86,3 +138,48 @@ $(function () {
         return showPage(currentPage - 1)
     });
 });
+
+// Search 
+
+const search = () => {
+    const searchBox = document.getElementById("search-item").value.toUpperCase();
+    const proItem = document.getElementById("product-list");
+    const product = document.querySelectorAll(".pro");
+    const proName = proItem.getElementsByTagName("h5");
+
+    for (var i = 0; i < proName.length; i++) {
+        let match = product[i].getElementsByTagName('h5')[0];
+
+        if (match) {
+            let textValue = match.textContent || match.innerHTML
+
+            if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+                product[i].style.display = "";
+            } else {
+                product[i].style.display = "none";
+            }
+        }
+    }
+}
+
+// Voice Search đang lỗi hihi 
+record
+let mic;
+mic = document.getElementById("voice-search");
+
+// Voice Search
+
+mic.onclick = () => {
+    mic.classList.add('record');
+    let recognition = new webkitSpeechRecognition;
+    recognition.lang = 'vi-VN';
+    // recognition.lang = 'en-US';
+    recognition.start();
+    recognition.onresult = (e) => {
+        const m = search.value = e.results[0][0].transcript;
+        // const m = search.value = e.results[0][0].transcript.replace(/\.$/, '');
+        showItem(m);
+        mic.classList.remove('record');
+    }
+
+}
