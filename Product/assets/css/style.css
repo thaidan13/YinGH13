@@ -305,6 +305,13 @@ body {
   right: 10px;
 }
 
+
+#product1 .pro .cart:hover {
+  background-color: #088178;
+  color: #c9cbce;
+}
+
+
 #banner {
   display: flex;
   flex-direction: column;
