@@ -1112,6 +1112,13 @@ footer .copyright {
 
 /* Responsive */
 
+@media (max-width: 2660px) {
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 60vh;
+  }
+}
+
 @media (max-width: 799px) {
 
   .section-p1 {
